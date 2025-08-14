@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Create Your Profile</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<div class="logo-wrapper">
+				<img src="./public/logo.png" alt="Logo" class="profile-image" />
+			</div>
+			<div class="profile-info-wrapper">
+				<div class="user-info">
+					<img
+						src="./public/Avatar.png"
+						alt="Logo"
+						class="avatar-image"
+					/>
+					<div class="user-details">
+						<span class="user-label">Dr. John Doe</span>
+						<div class="icon-action">
+							<svg
+								width="12"
+								height="7"
+								viewBox="0 0 12 7"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M1 1L6 6L11 1"
+									stroke="#8E8F8F"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<img
+					src="./public/moonshot-logo-wide 1.png"
+					alt="Logo"
+					class="dental-coysscy"
+				/>
+				<div class="toggle-icon">
+					<svg
+						width="24"
+						height="25"
+						viewBox="0 0 24 25"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M3 12.5H21M3 6.5H21M3 18.5H21"
+							stroke="#466A81"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</div>
+			</div>
+		</header>
+		<main class="user-profile-info-wrapper">
+			<form class="user-profile-form-container">
+				<h2 class="form-title">Create Your Profile</h2>
+				<div class="form-collection">
+					<div class="form-pane">
+						<label class="section-label">Your Name</label>
+						<div class="form-row">
+							<div class="form-group">
+								<input
+									type="text"
+									id="firstName"
+									name="firstName"
+									placeholder="First Name"
+									required
+								/>
+							</div>
+							<div class="form-group">
+								<input
+									type="text"
+									id="lastName"
+									name="lastName"
+									placeholder="Last Name"
+									required
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="form-pane">
+						<label class="section-label">Contact Details</label>
+						<div class="form-row">
+							<div class="form-group">
+								<input
+									type="email"
+									id="email"
+									name="email"
+									placeholder="Email"
+									required
+								/>
+							</div>
+							<div class="form-group">
+								<input
+									type="tel"
+									id="mobile"
+									name="mobile"
+									placeholder="Mobile No"
+									required
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="form-pane">
+						<label class="section-label"
+							>Select Primary Role:</label
+						>
+						<div class="form-row">
+							<div class="form-group">
+								<label class="sub-label-wrap">Role</label>
+								<div class="dropdown-wrap">
+									<select
+										required
+										class="dropdown-wrap"
+										id="role"
+										name="role"
+									>
+										<option value=" Specialist">
+											Specialist (Partner)
+										</option>
+										<optgroup label="Specialist">
+											<option value="owner">Owner</option>
+											<option value="partner">
+												Partner
+											</option>
+											<option value="associate">
+												Associate
+											</option>
+										</optgroup>
+										<optgroup label="Others">
+											<option value="hygienist">
+												Hygienist
+											</option>
+											<option
+												value="practice-success-director"
+											>
+												Practice Success Director
+											</option>
+											<option
+												value="strategic-growth-partner"
+											>
+												Strategic Growth Partner
+											</option>
+											<option
+												value="treatment-consultant"
+											>
+												Treatment Consultant
+											</option>
+											<option value="custom-role">
+												Custom Role
+											</option>
+										</optgroup>
+									</select>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M4 6L8 10L12 6"
+											stroke="#8E8F8F"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="sub-label-wrap"
+									>Specialty Type</label
+								>
+								<div class="dropdown-wrap">
+									<select
+										required
+										id="specialty"
+										name="specialty"
+									>
+										<option value="">Select</option>
+										<option value="type1">
+											Periodontist
+										</option>
+										<option value="type2">
+											Endodontist
+										</option>
+										<option value="type3">
+											Oral Surgeon
+										</option>
+										<option value="type4">
+											Prosthodontist
+										</option>
+									</select>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M4 6L8 10L12 6"
+											stroke="#8E8F8F"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group checkbox-group">
+								<input
+									type="checkbox"
+									id="producer"
+									name="producer"
+								/>
+								<label for="producer"
+									>Is this user a producer?</label
+								>
+							</div>
+						</div>
+					</div>
+					<div class="form-pane form-pane-location">
+						<label class="section-label">Select Location</label>
+						<div class="form-row">
+							<div class="form-group">
+								<div class="dropdown-wrap">
+									<select
+										required
+										class="dropdown-wrap"
+										id="location1"
+										name="location1"
+									>
+										<option value="">Select</option>
+										<option value="india">India</option>
+										<option value="usa">USA</option>
+									</select>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M4 6L8 10L12 6"
+											stroke="#8E8F8F"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="dropdown-wrap">
+									<select
+										required
+										class="dropdown-wrap"
+										id="location2"
+										name="location2"
+									>
+										<option value="">Select</option>
+										<option value="state1">State 1</option>
+										<option value="state2">State 2</option>
+									</select>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M4 6L8 10L12 6"
+											stroke="#8E8F8F"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-actions">
+					<button type="button" class="btn cancel">Cancel</button>
+					<button type="submit" class="btn submit">Submit</button>
+				</div>
+			</form>
+		</main>
+	</body>
+</html>
